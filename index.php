@@ -22,9 +22,12 @@
     <title>Weather scrapper!</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Bootstrap and CSS test</h1>
+        
 
-    <h1>Bootstrap and CSS test</h1>
 
+    </div>
     <?php
       echo "php is working";
     ?>

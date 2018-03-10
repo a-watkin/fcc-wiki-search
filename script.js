@@ -1,7 +1,11 @@
-// tests the script is being loaded
-alert('test');
+$( document ).ready(function() {
 
-$.noConflict();
-jQuery(document).ready(function($){
-   alert('jQuery is working');
-}); 
+    // tests the script is being loaded
+    alert('test');
+
+    $.noConflict();
+    jQuery(document).ready(function($){
+       alert('jQuery is working');
+    });
+
+});
