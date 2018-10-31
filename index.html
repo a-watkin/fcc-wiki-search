@@ -1,96 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-      crossorigin="anonymous">
-    
-    <!-- jQuery first (with ajax here), then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-    </script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Optional JavaScript, needed for scrollspy -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
-      crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 
-    <!-- bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-      crossorigin="anonymous"></script>
+  <!-- jQuery first (with ajax here), then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Optional JavaScript, needed for scrollspy -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <!-- bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 
-    <!-- Font awesome icons -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- my css file -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- my css file -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- my script file -->
-    <script src="script.js"></script>
-   
-    <title>Wiki-search</title>
-  </head>
-  <body>
-    <div class="container">
+  <!-- my script file -->
+  <script src="script.js"></script>
 
-      <div class="row text-center">
-        <div class="col-sm">
-          <h1>Wikipedia search</h1>
-          <!-- <p>Enter a subject to search for below</p> -->
-        </div>
+  <title>Wiki-search</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-sm">
+        <h1>Wikipedia search</h1>
+        <!-- <p>Enter a subject to search for below</p> -->
       </div>
-
-      <div class="row">
-        <div class="col-sm">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-
-              <button class="btn btn-outline-secondary" id="search-button" type="button">Search</button>
-              </div>
-
-              <input id="search-box" type="text" 
-              class="form-control" placeholder="Enter a subject to search for" 
-              aria-label="" aria-describedby="basic-addon1">
-
-            </div>
-        </div>
-      </div>
-
-      <div class="row text-center">
-        <div class="col-sm">
-          <!-- <p id="random-page">Or click here for a random page</p> -->
-          <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">Or click here for a random page</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col" id="fucking-bullshit">
-
-          <span id="error-message"> 
-
-          </span>
-
-          <ul id="results">
-            <!-- <li>Title that will also be a link<br>Snippet<br></li> -->
-    
-          </ul>
-        </div>
-      </div>
-
-    
     </div>
-  </body>
+
+    <div class="row">
+      <div class="col-sm">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+
+            <button class="btn btn-outline-secondary" id="search-button" type="button">Search</button>
+          </div>
+
+          <input id="search-box" type="text" class="form-control" placeholder="Enter a subject to search for"
+            aria-label="" aria-describedby="basic-addon1">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-sm">
+        <!-- <p id="random-page">Or click here for a random page</p> -->
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">Or click here for a random page</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col" id="fucking-bullshit">
+
+        <span id="error-message">
+
+        </span>
+
+        <ul id="results">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
