@@ -1,8 +1,12 @@
-# Project for FFC
+# Wikipedia search
 
 Web page that allows users to search for wikipedia articles and displays the results with title and brief description.
 
 The wikipedia API is used to get the results which are displayed on a very minimalistic page.
+
+All links open in a new tab. A random page can also be opened.
+
+This project was done as part of Free code camp assignments.
 
 Uses:
 
